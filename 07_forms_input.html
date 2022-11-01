@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and input</title>
+  </head>
+  <body>
+    <form action="process.php"></form>
+
+    <!-- Name -->
+    <!-- Div to separate label and input -->
+    <!-- placeholder to put in the form a placeholder -->
+    <div>
+      <label for="name">Name</label> <br />
+      <input type="text" id="name" name="name" placeholder="John Doe" />
+    </div>
+
+    <!-- Email Input -->
+    <!-- placeholder tag to put a placeholder -->
+    <div>
+      <label for="Email">Email</label> <br />
+      <input
+        type="Email"
+        id="Email"
+        name="Email"
+        placeholder="Enter a valid email address"
+      />
+    </div>
+
+    <!-- Text Area Input -->
+    <!-- the br tag is to break the line btw message and the form field -->
+    <!-- selected to pre-select a value -->
+    <div>
+      <label for="Message">Message</label> <br />
+      <textarea
+        name="Message"
+        id="Message"
+        cols="30"
+        rows="10"
+        style="resize: none"
+      ></textarea>
+    </div>
+
+    <!-- sex -->
+    <div>
+      <label for="Sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="Male">Male</option>
+        <option value="Female" selected>Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <!-- Age -->
+    <div>
+      <label for="age">Age</label> <br />
+      <input type="number" name="Age" id="age" />
+    </div>
+
+    <!-- Date -->
+    <div>
+      <label for="birthdate">Birthdate</label> <br />
+      <input type="date" name="birtdate" id="birthdate" />
+    </div>
+
+    <!-- Radio Button -->
+    <!-- checked to pre-select a particular option -->
+    <div>
+      <label for="membership">Click to select your preferred option</label>
+      <br />
+      <input type="radio" name="membership" value="simple" id="membership" />
+      Simple <br />
+      <input type="radio" name="membership" value="standard" id="membership" />
+      Standard <br />
+      <input
+        type="radio"
+        name="membership"
+        value="Executive"
+        id="membership"
+        checked
+      />
+      Executive <br />
+    </div>
+
+    <!-- Checkbox -->
+    <!-- value is always in lowercase. it's what gets sent to the server -->
+    <div>
+      <label for="favourite">Select all that Applies</label> <br />
+      <input
+        type="checkbox"
+        name="favourite"
+        value="Bigi-cola"
+        id="favourite"
+      />
+      Bigi Cola <br />
+      <input type="checkbox" name="favourite" value="pepsi" id="favourite" />
+      Pepsi <br />
+      <input type="checkbox" name="favourite" value="fanta" id="favourite" />
+      Fanta <br />
+      <input type="checkbox" name="favourite" value="mirinda" id="favourite" />
+      Mirinda <br />
+    </div>
+
+    <!-- button -->
+    <input type="button" value="Submit" />
+
+    <!-- Another way to create this -->
+    <!-- <button type="submit">Submit</button> -->
+    <!-- <button type="reset">Reset</button> -->
+  </body>
+</html>

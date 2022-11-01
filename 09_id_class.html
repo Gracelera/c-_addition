@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div, Span, Id, and Span</title>
+
+
+    <style>
+      .card {
+        border: 1px #ccc solid;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .enhance {
+        color: yellow;
+        background-color:black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="Main-header" class="card">
+      <h1>My website</h1>
+      <p>Site About Me</p>
+    </div>
+
+    <ul id="Main-nav">
+      <li><a href="#">Homepage</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- tip: by clicking #about, it write it all out for you -->
+<!-- on div and span, div pushes the next thing down but span helps such to stay in-line. Hence, div is a block element and span is a in-line element -->
+
+
+    <div id="about" class="card">
+      <h3>About</h3>
+      <p>
+        Lorem ipsum dolor sit mollitia doloribus quos? Vitae nisi obcaecati natus hic aspernatur ad rem delectus nam porro ab dolorem eveniet unde aliquid corporis reiciendis optio sapiente consequatur, minus voluptatem recusandae! Error aliquam labore veniam voluptas et magni dolorum debitis ipsum rerum libero dolorem provident commodi a cumque quibusdam, <div class="enhance">amet consectetur adipisicing elit. Placeat, amet
+        ex architecto</div> eaque error nobis omnis. Repellat consectetur voluptatum
+        rem autem? Iste, eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ipsum iusto quia dignissimos error, mollitia doloribus quos? Vitae nisi obcaecati natus hic aspernatur ad rem delectus nam porro ab dolorem eveniet unde aliquid corporis reiciendis optio sapiente consequatur, minus voluptatem recusandae! Error aliquam labore veniam voluptas et magni dolorum debitis ipsum rerum libero dolorem provident commodi a cumque quibusdam, expedita, veritatis saepe corporis asperiores ut doloribus at perspiciatis quae itaque! Cum, optio. Consequatur est quos non vitae illo delectus molestiae quisquam autem iusto quis harum maxime veritatis qui obcaecati ab, minus tempora asperiores magni distinctio voluptates? Suscipit, magnam facilis! Itaque! Tempora vel voluptatibus architecto! Nemo expedita
+        doloribus beatae <span class="enhance">quaerat voluptas voluptatem sequi earum enim, ducimus
+        non aspernatur eaque itaque</span> ipsa tempora labore voluptatibus magni
+        repellendus quod aut.
+      </p>
+    </div>
+
+    <!-- class can be repeated in our css file but Ids cannot be repeated -->
+
+    <div id="contact" class="card">
+      <h3>Contact</h3>
+      <ul>
+        <li>
+          Address: No 10, Road A, Goshen Estate, Opposite NNPC Depot, Apata,
+          Ibadan.
+        </li>
+        <li>leramograce85@gmail.com</li>
+      </ul>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; 2022</p>
+    </div>
+  </body>
+</html>

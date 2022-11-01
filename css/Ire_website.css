@@ -1,0 +1,20 @@
+h1 {
+  font-size: 14vw;
+  display: block;
+  text-align: center;
+  font-weight: lighter;
+  line-height: 1;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* 
+#typography {
+  font-size: 300px;
+  position: center bottom;
+} */
+p {
+  display: block;
+  margin-bottom: 1em;
+}
